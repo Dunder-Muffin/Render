@@ -3,6 +3,21 @@
 	"EngineAssociation": "5.1",
 	"Category": "",
 	"Description": "",
+	"Modules": [
+		{
+			"Name": "Render",
+			"Type": "Runtime",
+			"LoadingPhase": "Default",
+			"AdditionalDependencies": [
+				"Engine"
+			]
+		},
+		{
+			"Name": "ShaderModule",
+			"Type": "Runtime",
+			"LoadingPhase": "PostConfigInit"
+		}
+	],
 	"Plugins": [
 		{
 			"Name": "RawInput",
@@ -17,10 +32,6 @@
 		},
 		{
 			"Name": "ChaosVehiclesPlugin",
-			"Enabled": true
-		},
-		{
-			"Name": "RenderDocPlugin",
 			"Enabled": true
 		}
 	]
